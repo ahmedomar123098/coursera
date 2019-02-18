@@ -5,32 +5,38 @@
 <title>Pseudo Class Selectors</title>
 <style>
 header li {
-	list-style: none;
+ list-style-type: none; 
 }
-a:link, a:visited{
+a:link {
+	text-decoration: none;
+background-color: green;
+border: 1px solid blue;
+color: black;
+display: block;
+width: 200px;
+text-align: center; 
+margin-bottom: 1px;
+float: left;
+
+
+}
+a:visited{
 	text-decoration: none;
 	background-color: green;
 	border: 1px solid blue;
 	color: black;
-	display: block;
-	width: 200px;
-	text-align: center;
-	margin-bottom: 1px;
+
 }
 a:hover, a:active {
-	background-color: red;
 	color: purple;
+	margin-top: 3px;
+	background-color: yellow;
 }
-header li:nth-child(3) {
-	font-size: 24px;
-}
-section div:nth-child(odd) {
+
+div:nth-child(odd) {
 	background-color: gray;
 }
-
-
-
-section div:nth-child(4):hover {
+div:nth-child(4):hover {
 	background-color: green;
 	cursor: pointer;
 
@@ -47,7 +53,10 @@ section div:nth-child(4):hover {
     <li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
   </ul>
 </header>
-
+<br>
+<br>
+<br>
+<br>
 <section>
   <div>DIV 1</div>
   <div>DIV 2</div>
@@ -71,6 +80,5 @@ section div:nth-child(4):hover {
   <div>DIV 20</div>
 </section>
 
-<p style="width: bold;"> this is a text written in bold  </p>
 </body>
 </html>
