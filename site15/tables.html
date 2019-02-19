@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tables.html</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-color: rgb(204,255,230);
+		color: rgb(38,0,77);
+		font-weight: bold;
+		font-style: italic;
+	}
+table, th, td{
+	border:1px solid black ;
+
+}
+th:hover {
+	position: relative;
+	top: 8px;
+}
+
+ td:hover {
+position: relative;
+top: 8px;
+
+}
+
+table {
+	border-spacing: 15px;
+}
+th,td {
+	padding: 3px;
+	text-align: center;
+	font-family: arial;
+	font-size: 150%;
+}
+body table:nth-child(2) {
+	background-color:  	
+}
+#table2 {
+	background-color: rgb(170, 108, 134);
+}
+
+@media (max-width: 600px) {
+	 {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1 style="display: block;" >just don't look too much</h1>
+
+<table style="width: 100%">
+	<caption style="font-size: 50px;"> personal info</caption>
+	<tr>
+<th> Name</th>
+<th> Age </th>
+<th colspan="2" > last name</th>
+	</tr>
+	<tr>
+<td> ahmed </td>
+<td> 18</td>
+<td> omar</td>
+<td>mohamed</td>
+	</tr>
+	<tr>
+<td>mahmoud </td>
+<td> 18</td>
+<td>   saleh</td>
+<td> farghal</td>
+
+	 </tr>
+	<tr>
+<td>tarek </td>
+<td>  18</td>
+<td>  gamal</td>
+<td> al masry</td>
+	</tr>
+</table>
+
+
+
+<table id="table2" style="width: 100%; margin-top: 50px;">
+	<caption style="font-size: 50px;">  personal info again :) </caption>
+<tr>
+<th> name </th>
+<td> ahmed omar mohamed   </td>
+
+</tr>
+<tr>
+<th rowspan="2"> telephone number </th>
+<td> 01026112207</td>
+<td> 01026112202</td>
+</tr>
+</table>
+<h1>and this is an iframe of w3schools webpage </h1>
+<iframe src="http://movizland.online/"></iframe>
+
+<h1>this is a try to make buttons  </h1>
+<button type="button" onclick="document.getElementById('demo').innerHTML =Date()">
+date&time
+</button>
+<p id="demo"></p>
+
+<h1> have u ever tried using java script ? here it is down there (types of java script usage ) .</h1>
+
+<p id="rat"> </p>
+<script type="text/javascript">
+document.getElementById("rat").innerHTML = "this is a text written by java";
+</script>
+<!-- JavaScript can change the content of an HTML element: -->
+<button type="button" onclick="myfunction()"> click me to see what happens  </button>
+<p id="jav" > this is the place that the java script function will show up </p>
+<script type="text/javascript">
+function myfunction() {
+	document.getElementById("jav").innerHTML = "hello java script";
+}
+</script>
+<!-- JavaScript can change the style of an HTML element. -->
+<p id="styl"> this phrase will be changed by java script when you click on the button above</p>
+<script type="text/javascript" >
+document.getElementById("styl").style.fontSize = "25px";
+document.getElementById("styl").style.color = "rgb(255, 204, 102)";
+document.getElementById("styl").style.backgroundColor = "rgb(38,0,77)";
+</script>
+<!-- sorry for not using the button but it seems we can use 1 myfunction  property till now -->
+<!-- and now using the java in changing attributes -->
+<script>
+function light(sw) {
+	var pic;
+	if (sw == 0) {
+		pic = "pic_bulboff.GIF"
+	}
+	else {
+		pic = "pic_bulbon.GIF"
+	}
+	document.getElementById("myimage").src = pic;
+}
+</script>
+
+<img id="myimage" src="pic_bulboff.GIF" width="100" height="180">
+
+<p>
+<button onclick= "light(1)"> light on </button>
+<button onclick= "light(0)"> light off </button>
+ </p>
+
+ <!-- HTML layouts -->
+ <header><h1 style="text-align: center; background-color: gray; color: white; padding: 25px;"> cities </h1> </header>
+<section style="float: left;  height: 25n0px; background-color: gray; position: relative; bottom: 23px; padding: 20px;"> <nav style="float: left;">
+ <ul style="width: 30%;">
+<li><a href="https://en.wikipedia.org/wiki/Paris"></a> paris</li>
+<li><a href="https://en.wikipedia.org/wiki/London"></a> London</li>
+<li><a href="https://en.wikipedia.org/wiki/Tokyo"></a> Tokyo</li>
+ </ul>
+</nav>
+</section>
+<article style="float: left;width: 70%;">
+<aside style="clear: both; padding: 20px; ">    <h2 style="text-align: center;"> London </h2>     <p>
+London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+
+Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p></aside></article>
+<footer style="background-color: gray; color: white; text-align: center; clear: left;  padding: 25px; "> footer</footer>
+<!-- responsive layout showing different pics depending on the width of the page -->
+<picture>
+<source srcset=" joker.jpg" media="(max-width: 2000px">
+	<source srcset="panther eyes.jpg" media="(max-width: 1500px)">
+		<source srcset="monsters.jpg" media="(max-width: 600px)">
+			<img src="joker.jpg" style="width: auto;">
+</picture>
+
+<h1 style="background-color: gray; text-align: center;"> hello world</h1>
+<div style="width: 20%; float:left;">
+<a href="https://www.youtube.com/" style="float: left;
+	padding: 5px;
+	margin-top: 5px;
+	text-align: center;
+	display: block;
+	background-color: gray;
+	color: black;
+	text-decoration: none;
+	width: 100%;">link 1 </a>
+<a href="https://www.youtube.com/" style="float: left;
+	padding: 5px;
+	margin-top: 5px;
+	text-align: center;
+	display: block;
+	background-color: gray;
+	color: black;
+	text-decoration: none;
+	width: 100%;">link 2 </a>
+<a href="https://www.youtube.com/" style="float: left;
+	padding: 5px;
+	margin-top: 5px;
+	text-align: center;
+	display: block;
+	background-color: gray;
+	color: black;
+	text-decoration: none;
+	width: 100%;">link 3 </a>
+<a href="https://www.youtube.com/" style="float: left;
+	padding: 5px;
+	margin-top: 5px;
+	text-align: center;
+	display: block;
+	background-color: gray;
+	color: black;
+	text-decoration: none;
+	width: 100%;">link 4 </a>
+</div>
+<div style=" text-align: center; padding: 10px; font-size: 150%; float: left; width: 60%;">
+<h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+<div style="width: 20%; background-color: gray; text-align: center; float: left; padding: 5px;">
+
+<h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</div>
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px; float: left; width: 100%;">© copyright w3schools.com</div>
+
+<!-- creating forms -->
+<h1 style="text-align: center;"> this is an html form </h1>
+<form action="/action_page.php">
+	first name: <br>
+<input type="text" name="firstname" value="firstname">
+	<br>
+last name: <br>
+<input type="text" name="lastname" value="lastname">
+
+</form>
+
+</body>
+</html>
